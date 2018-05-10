@@ -1,0 +1,11 @@
+<form class="loginCss" [formGroup]="loginFrm" (ngSubmit)="onLoginSubmit(loginFrm.value)">
+    <input type='text' placeholder="username" formControlName="userIdentity"/>
+    <br>
+    <br>
+    <input type='password' placeholder="password" formControlName="secretWord"/>
+    <br>
+    <br>
+    <input type="submit" value="Login">
+  </form>
+
+  <router-outlet></router-outlet>

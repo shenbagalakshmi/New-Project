@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.cusCardStyle{
+    margin: -35.5em 0 0 20em !important;
+    box-shadow: none !important;
+    border: none !important;
+    height: 20em !important;
+    width: 30% !important;
+}
+
+.progress-info .progress{
+    margin: 0;
+    height: 2em;
+    border: 0;
+    background-image: none;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #f5f5f5;
+}
+
+.progress-info{
+    clear: both;
+    width: 87%;
+    margin: 1em 0 0 1em;
+    /* margin-left: 1em; */
+    border-radius: 0px;
+    /* margin-top: 1em; */
+}
+
+
+.progress-bar.green-sharp{
+    background:deepskyblue!important;
+    color: #FFF!important;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.progress-info .status{
+margin-top: 5px;
+font-size: 11px;
+color: #AAB5BC;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.progress-info .status .status-title{
+    float: left;
+    /* display: inline-block; */
+}
+
+ .progress-info .status .status-number{
+     float: right;
+ }
+
+.achievedStatus{
+ width: 24%;
+ height: 0.5em;
+ margin:5em 0 0 3em;
+}
+
+.remStatus{
+width: 24%;
+/* height: 8.5em; */
+/* display: flex; */
+margin-left: 17em;
+margin-top: -0.6em;
+}
