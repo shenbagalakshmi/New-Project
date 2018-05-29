@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import {AdminDashboardModule} from './admin-dashboard/admin-dashboard.module';
 import {MapDetailsModule} from './map-details/map-details.module'
 import { UserManagementModule } from './user-management/user-management.module';
+import {ProspectsModule} from './prospects/prospects.module';
 
 //services
 import {ScriptLoaderService} from './services/script-loader.service';
@@ -38,6 +39,10 @@ const appRoutes: Routes = [
    {
     path:'usersInvite',
     loadChildren: () => UserManagementModule
+   },
+   {
+     path:'showProspects',
+     loadChildren: () => ProspectsModule
    },
    { path: '**', component: PageNotFoundComponent }
 ];
