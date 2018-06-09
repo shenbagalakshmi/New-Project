@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ProspectsRoutingModule } from './prospects-routing.module';
 import { DealProspectsComponent } from './deal-prospects/deal-prospects.component';
-import {AdminDashboardModule} from './../admin-dashboard/admin-dashboard.module'
+import {AdminDashboardModule} from './../admin-dashboard/admin-dashboard.module';
+import {DragulaModule} from 'ng2-dragula';
 
 @NgModule({
   imports: [
     CommonModule,
     ProspectsRoutingModule,
-    AdminDashboardModule
+    AdminDashboardModule,
+    DragulaModule
   ],
   declarations: [DealProspectsComponent]
 })
