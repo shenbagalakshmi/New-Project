@@ -1,117 +1,45 @@
 import { Component, OnInit,AfterViewInit } from '@angular/core';
 import { ScriptLoaderService } from '../../services/script-loader.service';
-import {DashboardHeaderComponent } from '../../admin-dashboard/dashboard-header/dashboard-header.component'
-import { DragulaService } from 'ng2-dragula';
+import {DashboardHeaderComponent} from'./../../admin-dashboard/dashboard-header/dashboard-header.component';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-deal-prospects',
   templateUrl: './deal-prospects.component.html',
   styleUrls: ['./deal-prospects.component.css']
 })
-export class DealProspectsComponent implements OnInit {
+export class DealProspectsComponent implements OnInit,AfterViewInit {
 
-  public meetingRequest: Array<any> = [
-    {
-    heading: '$10 Showcase cinemas UK',
-    closedDate:'closed date June 30 2017'
-  },
-  {
-    heading: '$10 Cineowrld cinemas -new deal',
-    closedDate:'closed date June 30 2017'
-  },
-  {
-    heading: '$110 Mini Cooper',
-    closedDate:'closed date June 30 2017'
-  },
-  {
-    heading: '$105 Baja Finance SEO',
-    closedDate:'closed date June 30 2017'
-  },
-]
-  // public many: Array<string> = ['The', 'possibilities', 'are', 'endless!'];
-  public scheduledAppointments: Array<any> = [
-    {
-    heading: '$10 Showcase cinemas UK',
-    closedDate:'closed date June 30 2017'
-  },
-  {
-    heading: '$10 Cineowrld cinemas -new deal',
-    closedDate:'closed date June 30 2017'
-  },
-  {
-    heading: '$105 Baja Finance SEO',
-    closedDate:'closed date June 30 2017'
-  },
-]
+  showGridDiv:boolean = true;
+  assignClick:boolean;
+  unassignClick:boolean ;
+  constructor(private router:Router){
 
-public qualifyData: Array<any> = [
-  {
-  heading: '$10 Showcase cinemas UK',
-  closedDate:'closed date June 30 2017'
-},
-{
-  heading: '$10 Cineowrld cinemas -new deal',
-  closedDate:'closed date June 30 2017'
-}
-]
-public propsalsData: Array<any> = [
-  {
-  heading: '$10 Showcase cinemas UK',
-  closedDate:'closed date June 30 2017'
-}
-]
-public negotiationsData: Array<any> = [
-  {
-  heading: '$10 Showcase cinemas UK',
-  closedDate:'closed date June 30 2017'
-},
-{
-  heading: '$10 Cineowrld cinemas -new deal',
-  closedDate:'closed date June 30 2017'
-},
-{
-  heading: '$105 Baja Finance SEO',
-  closedDate:'closed date June 30 2017'
-},
-{
-  heading: '$10 Showcase cinemas UK',
-  closedDate:'closed date June 30 2017'
-}
-]
-
-  constructor(private prospectsScriptsLoader:ScriptLoaderService,
-    private dragulaService:DragulaService) { }
-
-  ngOnInit() {
-    this.dragulaService.dropModel.subscribe((value)=>
-  {
-    this.onDropModel(value.slice(1));
-  });
-  this.dragulaService.removeModel.subscribe((value =>
-  {
-    this.onRemoveModel(value.slice(1));
-  }))
-  //  console.log( document.getElementsByClassName("dashboardDetailsDiv"));
   }
+ngOnInit(){
+  document.getElementById('dashboardDetailsDiv').style.display = 'none' ;
+  console.log(this.router.routerState.snapshot.url);
+  if(this.router.routerState.snapshot.url != '/showProspects/allocateLead')
+this.showAssignedGrid();
+}
 
-  private onDropModel(args) {
-    let [el, target, source] = args;
-    console.log(this.meetingRequest);
-    // do something else
-  }
-
-  private onRemoveModel(args) {
-    let [el, source] = args;
-    // do something else
-  }
-
-  ngAfterViewInit() {
-  //   this.prospectsScriptsLoader.loadScripts('app-deal-prospects',
-  // ['assets/js/dragula/dragula.min.js']);
-    // this.prospectsScriptsLoader.loadScripts('app-deal-prospects',
-    //     ['assets/js/draggable-portlets/jquery-ui.bundle.js',
-    //         'assets/js/draggable-portlets/draggable.js']);
+ngAfterViewInit(){
 
 }
 
+generateDiv(){
+  // this.showGridDiv=!this.showGridDiv;
+}
+showAssignedGrid(){
+  this.assignClick=true;
+  this.unassignClick=false;
+  this.router.navigateByUrl('/showProspects/showAssigned');
+
+}
+
+navToUnassigned(){
+  this.unassignClick=true;
+  this.router.navigateByUrl('/showProspects/allocateLead');
+}
 }

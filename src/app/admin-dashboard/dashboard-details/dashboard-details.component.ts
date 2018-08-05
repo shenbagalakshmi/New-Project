@@ -17,6 +17,5 @@ export class DashboardDetailsComponent implements OnInit {
   ngAfterViewInit() {
     this._script.loadScripts('app-dashboard-details',
         ['assets/js/dashboard.js','assets/js/charts/flot.bundle.js','assets/js/charts/flotcharts.js']);
-
 }
 }

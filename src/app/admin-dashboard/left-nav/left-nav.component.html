@@ -1,14 +1,17 @@
 <!-- BEGIN: Left Aside -->
+
+<div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
 <button class="m-aside-left-close  m-aside-left-close--skin-dark" id="m_aside_left_close_btn" appunwraptag="">
 	<i class="la la-close"></i>
 </button>
 <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark">
 	<!-- BEGIN: Aside Menu -->
-	<div  		id="m_ver_menu"  		class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark"  		data-menu-vertical="true" 		 data-menu-scrollable="false" data-menu-dropdown-timeout="500"   		>
+	<div id="m_ver_menu" class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark" data-menu-vertical="true"
+	 data-menu-scrollable="false" data-menu-dropdown-timeout="500">
 		<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow">
-			<li class="m-menu__item  " routerLinkActive="m-menu__item--active"   aria-haspopup="true" >
-				<a  routerLink="/loadDashboard" class="m-menu__link">
-				 <i class="m-menu__link-icon flaticon-line-graph"></i> 
+			<li class="m-menu__item  " routerLinkActive="m-menu__item--active" aria-haspopup="true">
+				<a routerLink="/loadDashboard" class="m-menu__link">
+					<i class="m-menu__link-icon flaticon-line-graph"></i>
 					<span class="m-menu__link-title">
 						<span class="m-menu__link-wrap">
 							<span class="m-menu__link-text">
@@ -29,23 +32,23 @@
 				</h4>
 				<i class="m-menu__section-icon flaticon-more-v3"></i>
 			</li> -->
-			<li class="m-menu__item" routerLinkActive="m-menu__item--active"   aria-haspopup="true" >
-				<a  routerLink="/loadMaps" class="m-menu__link" >
+			<li class="m-menu__item" routerLinkActive="m-menu__item--active" aria-haspopup="true">
+				<a routerLink="/loadMaps" class="m-menu__link">
 					<i class="m-menu__link-icon flaticon-settings"></i>
 					<span class="m-menu__link-text">
 						Live
 					</span>
 				</a>
 			</li>
-			<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-				<a  href="#" class="m-menu__link m-menu__toggle">
+			<li class="m-menu__item" routerLinkActive="m-menu__item--active" aria-haspopup="true">
+					<a routerLink="/loadAction" class="m-menu__link">
 					<i class="m-menu__link-icon flaticon-settings"></i>
 					<span class="m-menu__link-text">
 						Action
 					</span>
 					<i class="m-menu__ver-arrow la la-angle-right"></i>
 				</a>
-				<div class="m-menu__submenu">
+				<!-- <div class="m-menu__submenu">
 					<span class="m-menu__arrow"></span>
 					<ul class="m-menu__subnav">
 						<li class="m-menu__item  m-menu__item--parent" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
@@ -86,7 +89,7 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</li>
 			<!-- <li class="m-menu__section">
 				<h4 class="m-menu__section-text">
@@ -94,8 +97,8 @@
 				</h4>
 				<i class="m-menu__section-icon flaticon-more-v3"></i>
 			</li> -->
-			<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-				<a  href="#" class="m-menu__link m-menu__toggle">
+			<li class="m-menu__item" routerLinkActive="m-menu__item--active" aria-haspopup="true">
+				<a routerLink="/showTeamDetails" class="m-menu__link">
 					<i class="m-menu__link-icon flaticon-layers"></i>
 					<span class="m-menu__link-text">
 						Team
@@ -351,19 +354,19 @@
 					</ul>
 				</div> -->
 			</li>
-			<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-				<a  href="#" class="m-menu__link m-menu__toggle">
-					<i class="m-menu__link-icon flaticon-share"></i>
+			<li class="m-menu__item " routerLinkActive="m-menu__item--active" aria-haspopup="true">
+				<a routerLink="/showPipeline" class="m-menu__link">
+					<i class="m-menu__link-icon flaticon-multimedia-1"></i>
 					<span class="m-menu__link-text">
 						Pipeline
 					</span>
 					<i class="m-menu__ver-arrow la la-angle-right"></i>
 				</a>
-				<div class="m-menu__submenu">
+				<!-- <div class="m-menu__submenu">
 					<span class="m-menu__arrow"></span>
 					<ul class="m-menu__subnav">
-						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-							<a  routerLink="/components/icons/flaticon" class="m-menu__link">
+						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+							<a routerLink="/components/icons/flaticon" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -372,8 +375,8 @@
 								</span>
 							</a>
 						</li>
-						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-							<a  routerLink="/components/icons/fontawesome" class="m-menu__link">
+						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+							<a routerLink="/components/icons/fontawesome" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -382,8 +385,8 @@
 								</span>
 							</a>
 						</li>
-						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-							<a  routerLink="/components/icons/lineawesome" class="m-menu__link">
+						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+							<a routerLink="/components/icons/lineawesome" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -392,8 +395,8 @@
 								</span>
 							</a>
 						</li>
-						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-							<a  routerLink="/components/icons/socicons" class="m-menu__link">
+						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+							<a routerLink="/components/icons/socicons" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -403,10 +406,10 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</li>
-			<li class="m-menu__item " routerLinkActive="m-menu__item--active" aria-haspopup="true" >
-				<a  routerLink="/showProspects" class="m-menu__link">
+			<li class="m-menu__item " routerLinkActive="m-menu__item--active" aria-haspopup="true">
+				<a routerLink="/showProspects" class="m-menu__link">
 					<i class="m-menu__link-icon flaticon-multimedia-1"></i>
 					<span class="m-menu__link-text">
 						Prospects
@@ -416,15 +419,17 @@
 				<div class="m-menu__submenu">
 					<span class="m-menu__arrow"></span>
 					<ul class="m-menu__subnav">
-						<li class="m-menu__item  m-menu__item--parent" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
+						<li class="m-menu__item  m-menu__item--parent" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true">
 							<span class="m-menu__link">
 								<span class="m-menu__link-text">
 									Buttons
 								</span>
 							</span>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -436,8 +441,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/base/default" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/base/default" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -446,8 +451,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/base/square" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/base/square" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -456,8 +461,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/base/pill" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/base/pill" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -466,8 +471,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/base/air" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/base/air" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -479,8 +484,8 @@
 								</ul>
 							</div>
 						</li>
-						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-							<a  routerLink="/components/buttons/group" class="m-menu__link">
+						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+							<a routerLink="/components/buttons/group" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -489,8 +494,8 @@
 								</span>
 							</a>
 						</li>
-						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-							<a  routerLink="/components/buttons/dropdown" class="m-menu__link">
+						<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+							<a routerLink="/components/buttons/dropdown" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -499,8 +504,9 @@
 								</span>
 							</a>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -512,8 +518,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/icon/lineawesome" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/icon/lineawesome" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -522,8 +528,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/icon/fontawesome" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/icon/fontawesome" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -532,8 +538,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/buttons/icon/flaticon" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/buttons/icon/flaticon" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -548,8 +554,9 @@
 					</ul>
 				</div>
 			</li>
-			<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-				<a  href="#" class="m-menu__link m-menu__toggle">
+			<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+			 aria-haspopup="true" data-menu-submenu-toggle="hover">
+				<a href="#" class="m-menu__link m-menu__toggle">
 					<i class="m-menu__link-icon flaticon-interface-7"></i>
 					<span class="m-menu__link-text">
 						Settings
@@ -559,15 +566,17 @@
 				<div class="m-menu__submenu">
 					<span class="m-menu__arrow"></span>
 					<ul class="m-menu__subnav">
-						<li class="m-menu__item  m-menu__item--parent" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
+						<li class="m-menu__item  m-menu__item--parent" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true">
 							<span class="m-menu__link">
 								<span class="m-menu__link-text">
 									Forms
 								</span>
 							</span>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -579,8 +588,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/controls/base" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/controls/base" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -589,8 +598,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/controls/checkbox-radio" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/controls/checkbox-radio" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -599,8 +608,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/controls/input-group" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/controls/input-group" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -609,8 +618,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/controls/switch" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/controls/switch" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -619,8 +628,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/controls/option" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/controls/option" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -632,8 +641,9 @@
 								</ul>
 							</div>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -645,8 +655,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-datepicker" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-datepicker" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -655,8 +665,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-datetimepicker" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-datetimepicker" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -665,8 +675,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-timepicker" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-timepicker" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -675,8 +685,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-daterangepicker" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-daterangepicker" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -685,8 +695,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-touchspin" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-touchspin" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -695,8 +705,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-maxlength" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-maxlength" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -705,8 +715,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-switch" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-switch" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -715,8 +725,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-multipleselectsplitter" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-multipleselectsplitter" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -725,8 +735,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-select" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-select" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -735,8 +745,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/select2" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/select2" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -745,8 +755,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/typeahead" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/typeahead" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -755,8 +765,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/nouislider" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/nouislider" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -765,8 +775,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/form-repeater" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/form-repeater" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -775,8 +785,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/ion-range-slider" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/ion-range-slider" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -785,8 +795,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/input-mask" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/input-mask" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -795,8 +805,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/summernote" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/summernote" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -805,8 +815,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/bootstrap-markdown" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/bootstrap-markdown" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -815,8 +825,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/autosize" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/autosize" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -825,8 +835,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/clipboard" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/clipboard" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -835,8 +845,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/dropzone" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/dropzone" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -845,8 +855,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/widgets/recaptcha" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/widgets/recaptcha" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -858,8 +868,9 @@
 								</ul>
 							</div>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -871,8 +882,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/layouts/default-forms" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/layouts/default-forms" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -881,8 +892,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/layouts/multi-column-forms" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/layouts/multi-column-forms" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -891,8 +902,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/layouts/action-bars" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/layouts/action-bars" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -904,8 +915,9 @@
 								</ul>
 							</div>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -917,8 +929,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/validation/states" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/validation/states" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -927,8 +939,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/validation/form-controls" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/validation/form-controls" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -937,8 +949,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/validation/form-widgets" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/validation/form-widgets" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -950,8 +962,9 @@
 								</ul>
 							</div>
 						</li>
-						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true"  data-menu-submenu-toggle="hover">
-							<a  href="#" class="m-menu__link m-menu__toggle">
+						<li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--open" routerLinkActiveOptions="{ exact: true }"
+						 aria-haspopup="true" data-menu-submenu-toggle="hover">
+							<a href="#" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
@@ -963,8 +976,8 @@
 							<div class="m-menu__submenu">
 								<span class="m-menu__arrow"></span>
 								<ul class="m-menu__subnav">
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/wizard/wizard-1" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/wizard/wizard-1" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -973,8 +986,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/wizard/wizard-2" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/wizard/wizard-2" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -983,8 +996,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/wizard/wizard-3" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/wizard/wizard-3" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -993,8 +1006,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/wizard/wizard-4" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/wizard/wizard-4" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -1003,8 +1016,8 @@
 											</span>
 										</a>
 									</li>
-									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"  aria-haspopup="true" >
-										<a  routerLink="/components/forms/wizard/wizard-5" class="m-menu__link">
+									<li class="m-menu__item" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }" aria-haspopup="true">
+										<a routerLink="/components/forms/wizard/wizard-5" class="m-menu__link">
 											<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 												<span></span>
 											</i>
@@ -2034,7 +2047,8 @@
 	</div>
 	<!-- END: Aside Menu -->
 </div>
+</div>
 <!-- END: Left Aside -->
-<div class="m-grid__item m-grid__item--fluid m-wrapper">
+<div class="m-grid__item m-grid__item--fluid m-wrapper remvHrSty">
 	<router-outlet></router-outlet>
 </div>

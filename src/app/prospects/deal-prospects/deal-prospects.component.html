@@ -1,47 +1,9 @@
-<div>
-    <div class='wrapper'>
-        
-      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="meetingRequest">
-          <header>MEETING REQUEST</header>
-        <div class='itemClass' *ngFor="let item of meetingRequest">
-            <h5 [innerHtml]='item.heading'></h5>
-            <p [innerHtml]='item.closedDate'></p>
-        </div>
-      </div>
-      
-      
-      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="scheduledAppointments">
-          <header>MEETING REQUEST</header>
-        <div class='itemClass' *ngFor="let item of scheduledAppointments">
-          <h5 [innerHtml]='item.heading'></h5>
-          <p [innerHtml]='item.closedDate'></p>
-        
-        </div>
-      </div>
-      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="qualifyData">
-        <div class='itemClass' *ngFor="let item of qualifyData">
-          <h5 [innerHtml]='item.heading'></h5>
-          <p [innerHtml]='item.closedDate'></p>
-        
-        </div>
-      </div>
-      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="propsalsData">
-        <div class='itemClass' *ngFor="let item of propsalsData">
-          <h5 [innerHtml]='item.heading'></h5>
-          <p [innerHtml]='item.closedDate'></p>
-        
-        </div>
-      </div>
-      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="negotiationsData">
-        <div class='itemClass' *ngFor="let item of negotiationsData">
-          <h5 [innerHtml]='item.heading'></h5>
-          <p [innerHtml]='item.closedDate'></p>
-        
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
+<app-dashboard-header></app-dashboard-header>
+<!-- <div class="mainDiv"> -->
+  <header [ngClass]="{'headerCss':assignClick,'headerCss1':unassignClick}">
+<button type="button" class="btn m-btn--pill m-btn--air btn-secondary active m-btn m-btn--custom" (click)="showAssignedGrid()">Assigned</button>
 
+<button type="button" class="btn m-btn--pill m-btn--air btn-secondary m-btn m-btn--custom cusMrgn" (click)="navToUnassigned()">UnAssigned</button>
+</header>
+
+<router-outlet></router-outlet>

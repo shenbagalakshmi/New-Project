@@ -21,12 +21,19 @@
 .cusCardStyle4{
     width: 75%;
     left: 23em;
-    top: 0.5em
+    top: 2.5em
 }
 
 .cusCardStyle5{
-    width: 42%;
+    width: 37%;
     /* position: relative; */
     left: 23em;
-    top: 1.5em;
+    top: 4.5em;
+}
+
+
+.cusCardStyle6{
+    top: -30.3em;
+    left: 62em;
+    width: 37.5%;
 }

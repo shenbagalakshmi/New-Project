@@ -1,11 +1,37 @@
 <form class="loginCss" [formGroup]="loginFrm" (ngSubmit)="onLoginSubmit(loginFrm.value)">
-    <input type='text' placeholder="username" formControlName="userIdentity"/>
+
+    <div class="ui-inputgroup">
+        <!-- <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span> -->
+        <input type='text' required placeholder="Username" formControlName="userIdentity" pinputtext=""  class="ui-inputtext ui-corner-all ui-state-default ui-widget">
+      </div>
+
+    <!-- <input type='text' required placeholder="username" formControlName="userIdentity"/> -->
     <br>
     <br>
-    <input type='password' placeholder="password" formControlName="secretWord"/>
+    <div class="ui-inputgroup">
+        <!-- <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span> -->
+        <input type='password' required placeholder="Password" formControlName="secretWord" pinputtext=""  class="ui-inputtext ui-corner-all ui-state-default ui-widget">
+      </div>
+    <!-- <input type='password' placeholder="password" formControlName="secretWord"/> -->
     <br>
     <br>
-    <input type="submit" value="Login">
+    <button style="width:20%; margin-left:4em" [disabled]="!loginFrm.valid" class="btn m-btn--pill m-btn--air btn-accent" type="submit">
+      Login
+    </button>
+    <!-- <button [disabled]="!loginFrm.valid" type="submit" value="Login"> Login </button> -->
+
   </form>
+<!-- 
+  <div *ngIf="userIdentity.errors.required">
+    Please enter Username.
+  </div>
+
+  <div *ngIf="secretWord.errors.required">
+    Please enter Password.
+  </div>
+
+  <div *ngIf="userIdentity.invalid && secretWord.invalid">
+    Please enter valid credentials
+  </div> -->
 
   <router-outlet></router-outlet>

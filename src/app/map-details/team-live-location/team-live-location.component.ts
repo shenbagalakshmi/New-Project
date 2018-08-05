@@ -15,4 +15,20 @@ export class TeamLiveLocationComponent implements OnInit {
      document.getElementById('dashboardDetailsDiv').style.display='none';
   }
 
+  checkForEmails(event:any){
+    console.log(event);
+    var textInsideFile:string='';
+    const reader = new FileReader();
+    reader.onload = () =>{
+       textInsideFile= reader.result;
+      // console.log(textInsideFile);
+      const splittedAry = textInsideFile.split(',',100);
+// console.log(splittedAry);
+    }
+   
+reader.readAsText(event.target.files[0]);
+
+
+  }
+
 }

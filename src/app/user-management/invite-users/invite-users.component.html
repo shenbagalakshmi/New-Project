@@ -1,118 +1,8 @@
 <app-dashboard-header></app-dashboard-header>
 
-<!-- BEGIN: Subheader -->
-<!-- <div class="m-subheader" appunwraptag="">
-	<div class="d-flex align-items-center">
-		<div class="mr-auto">
-			<h3 class="m-subheader__title m-subheader__title--separator">
-				Form Wizard 2
-			</h3>
-			<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
-				<li class="m-nav__item m-nav__item--home">
-					<a href="#" class="m-nav__link m-nav__link--icon">
-						<i class="m-nav__link-icon la la-home"></i>
-					</a>
-				</li>
-				<li class="m-nav__separator">
-					-
-				</li>
-				<li class="m-nav__item">
-					<a href="" class="m-nav__link">
-						<span class="m-nav__link-text">
-							Forms
-						</span>
-					</a>
-				</li>
-				<li class="m-nav__separator">
-					-
-				</li>
-				<li class="m-nav__item">
-					<a href="" class="m-nav__link">
-						<span class="m-nav__link-text">
-							Form Wizard
-						</span>
-					</a>
-				</li>
-				<li class="m-nav__separator">
-					-
-				</li>
-				<li class="m-nav__item">
-					<a href="" class="m-nav__link">
-						<span class="m-nav__link-text">
-							Form Wizard 2
-						</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div>
-			<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" data-dropdown-toggle="hover" aria-expanded="true">
-				<a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
-					<i class="la la-plus m--hide"></i>
-					<i class="la la-ellipsis-h"></i>
-				</a>
-				<div class="m-dropdown__wrapper">
-					<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-					<div class="m-dropdown__inner">
-						<div class="m-dropdown__body">
-							<div class="m-dropdown__content">
-								<ul class="m-nav">
-									<li class="m-nav__section m-nav__section--first m--hide">
-										<span class="m-nav__section-text">
-											Quick Actions
-										</span>
-									</li>
-									<li class="m-nav__item">
-										<a href="" class="m-nav__link">
-											<i class="m-nav__link-icon flaticon-share"></i>
-											<span class="m-nav__link-text">
-												Activity
-											</span>
-										</a>
-									</li>
-									<li class="m-nav__item">
-										<a href="" class="m-nav__link">
-											<i class="m-nav__link-icon flaticon-chat-1"></i>
-											<span class="m-nav__link-text">
-												Messages
-											</span>
-										</a>
-									</li>
-									<li class="m-nav__item">
-										<a href="" class="m-nav__link">
-											<i class="m-nav__link-icon flaticon-info"></i>
-											<span class="m-nav__link-text">
-												FAQ
-											</span>
-										</a>
-									</li>
-									<li class="m-nav__item">
-										<a href="" class="m-nav__link">
-											<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-											<span class="m-nav__link-text">
-												Support
-											</span>
-										</a>
-									</li>
-									<li class="m-nav__separator m-nav__separator--fit"></li>
-									<li class="m-nav__item">
-										<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-											Submit
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<!-- END: Subheader -->
-<div class="m-content">
+<div class="m-content cusPosDiv">
 	<!--Begin::Main Portlet-->
-	<div class="m-portlet m-portlet--full-height">
+	<div class="m-portlet">
 		<!--begin: Portlet Head-->
 		<div class="m-portlet__head">
 			<div class="m-portlet__head-caption">
@@ -170,7 +60,7 @@
 							</div>
 						</div>
 						<div class="m-wizard__step" data-wizard-target="#m_wizard_form_step_2">
-							<a href="/usersInvite" class="m-wizard__step-number">
+							<a routerLink="/usersInvite" class="m-wizard__step-number">
 								<span>
 									<i class="fa  flaticon-layers"></i>
 								</span>
@@ -210,7 +100,7 @@
 			<!--end: Form Wizard Head -->           <!--begin: Form Wizard Form-->
 			<div class="m-wizard__form">
 				<!--                 1) Use m-form--label-align-left class to alight the form input lables to the right                 2) Use m-form--state class to highlight input control borders on form validation                 -->
-				<form class="m-form m-form--label-align-left- m-form--state-" id="m_form">
+				<form class="m-form m-form--label-align-left- m-form--state-" id="m_form" style="height:345px">
 					<!--begin: Form Body -->
 					<div class="m-portlet__body">
 						<!--begin: Form Wizard Step 1-->
@@ -264,7 +154,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="m-separator m-separator--dashed m-separator--lg"></div>
+									<!-- <div class="m-separator m-separator--dashed m-separator--lg"></div>
 									<div class="m-form__section">
 										<div class="m-form__heading">
 											<h3 class="m-form__heading-title">
@@ -1069,7 +959,7 @@
 												</select>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -1080,157 +970,31 @@
 									<div class="m-form__section m-form__section--first">
 										<div class="m-form__heading">
 											<h3 class="m-form__heading-title">
-												Account Details
+												Set up a Monitoring time for daily updates
 											</h3>
 										</div>
-										<div class="form-group m-form__group row">
-											<div class="col-lg-12">
-												<label class="form-control-label">
-													* URL:
-												</label>
-												<input type="url" name="account_url" class="form-control m-input" placeholder="" value="http://sinortech.vertoffice.com">
-												<span class="m-form__help">
-													Please enter your preferred URL  to your dashboard
-												</span>
-											</div>
-										</div>
+										
 										<div class="form-group m-form__group row">
 											<div class="col-lg-6 m-form__group-sub">
 												<label class="form-control-label">
-													* Username:
+													* Start time:
 												</label>
-												<input type="text" name="account_username" class="form-control m-input" placeholder="" value="nick.stone">
+												<input type="date" name="account_username" class="form-control m-input" placeholder="" value="nick.stone">
 												<span class="m-form__help">
-													Your username to login to your dashboard
+													The  time from which app will start tracking.
 												</span>
 											</div>
 											<div class="col-lg-6 m-form__group-sub">
 												<label class="form-control-label">
-													* Password:
+													* EOD time:
 												</label>
-												<input type="password" name="account_password" class="form-control m-input" placeholder="" value="qwerty">
+												<input type="date" name="account_password" class="form-control m-input" placeholder="" value="qwerty">
 												<span class="m-form__help">
-													Please use letters and at least one number and symbol
+													End time of tracking for the day.
 												</span>
 											</div>
 										</div>
-									</div>
-									<div class="m-separator m-separator--dashed m-separator--lg"></div>
-									<div class="m-form__section">
-										<div class="m-form__heading">
-											<h3 class="m-form__heading-title">
-												Client Settings
-											</h3>
-										</div>
-										<div class="form-group m-form__group row">
-											<div class="col-lg-6 m-form__group-sub">
-												<label class="form-control-label">
-													* User Group:
-												</label>
-												<div class="m-radio-inline">
-													<label class="m-radio m-radio--solid m-radio--brand">
-														<input type="radio" name="account_group" checked="" value="2">
-														Sales Person
-														<span></span>
-													</label>
-													<label class="m-radio m-radio--solid m-radio--brand">
-														<input type="radio" name="account_group" value="2">
-														Customer
-														<span></span>
-													</label>
-												</div>
-												<span class="m-form__help">
-													Please select user group
-												</span>
-											</div>
-											<div class="col-lg-6 m-form__group-sub">
-												<label class="form-control-label">
-													* Communications:
-												</label>
-												<div class="m-checkbox-inline">
-													<label class="m-checkbox m-checkbox--solid m-checkbox--brand">
-														<input type="checkbox" name="account_communication[]" checked value="email">
-														Email
-														<span></span>
-													</label>
-													<label class="m-checkbox m-checkbox--solid  m-checkbox--brand">
-														<input type="checkbox" name="account_communication[]" value="sms">
-														SMS
-														<span></span>
-													</label>
-													<label class="m-checkbox m-checkbox--solid  m-checkbox--brand">
-														<input type="checkbox" name="account_communication[]" value="phone">
-														Phone
-														<span></span>
-													</label>
-												</div>
-												<span class="m-form__help">
-													Please select user communication options
-												</span>
-											</div>
-										</div>
-									</div>
-									<div class="m-separator m-separator--dashed m-separator--lg"></div>
-									<div class="m-form__section">
-										<div class="m-form__heading">
-											<h3 class="m-form__heading-title">
-												Delivery Type
-											</h3>
-										</div>
-										<div class="form-group m-form__group">
-											<div class="row">
-												<div class="col-lg-6">
-													<label class="m-option">
-														<span class="m-option__control">
-															<span class="m-radio m-radio--state-brand">
-																<input type="radio" name="billing_delivery" value="">
-																<span></span>
-															</span>
-														</span>
-														<span class="m-option__label">
-															<span class="m-option__head">
-																<span class="m-option__title">
-																	Standart Delevery
-																</span>
-																<span class="m-option__focus">
-																	Free
-																</span>
-															</span>
-															<span class="m-option__body">
-																Estimated 14-20 Day Shipping                                                  (&nbsp;Duties end taxes may be due                                                  upon delivery&nbsp;)
-															</span>
-														</span>
-													</label>
-												</div>
-												<div class="col-lg-6">
-													<label class="m-option">
-														<span class="m-option__control">
-															<span class="m-radio m-radio--state-brand">
-																<input type="radio" name="billing_delivery" value="">
-																<span></span>
-															</span>
-														</span>
-														<span class="m-option__label">
-															<span class="m-option__head">
-																<span class="m-option__title">
-																	Fast Delevery
-																</span>
-																<span class="m-option__focus">
-																	$&nbsp;8.00
-																</span>
-															</span>
-															<span class="m-option__body">
-																Estimated 2-5 Day Shipping                                                 (&nbsp;Duties end taxes may be due                                                 upon delivery&nbsp;)
-															</span>
-														</span>
-													</label>
-												</div>
-											</div>
-											<div class="m-form__help">
-												<!--must use this helper element to display error message for the options-->
-											</div>
-										</div>
-									</div>
+									</div>									
 								</div>
 							</div>
 						</div>
@@ -1295,65 +1059,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="m-separator m-separator--dashed m-separator--lg"></div>
-											<div class="m-form__section">
-												<div class="m-form__heading">
-													<h4 class="m-form__heading-title">
-														Corresponding Address
-														<i data-toggle="m-tooltip" data-width="auto" class="m-form__heading-help-icon flaticon-info" title="Some help text goes here"></i>
-													</h4>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														Address Line 1:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															Headquarters 1120 N Street Sacramento 916-654-5266
-														</span>
-													</div>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														Address Line 2:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															P.O. Box 942873 Sacramento, CA 94273-0001
-														</span>
-													</div>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														City:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															Polo Alto
-														</span>
-													</div>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														State:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															California
-														</span>
-													</div>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														Country:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															USA
-														</span>
-													</div>
-												</div>
-											</div>
+						
 										</div>
 										<div class="tab-pane" id="m_form_confirm_2" role="tabpanel">
 											<div class="m-form__section m-form__section--first">
@@ -1393,44 +1099,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="m-separator m-separator--dashed m-separator--lg"></div>
-											<div class="m-form__section">
-												<div class="m-form__heading">
-													<h4 class="m-form__heading-title">
-														Account Details
-													</h4>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														URL:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															sinortech.vertoffice.com
-														</span>
-													</div>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														Username:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															sinortech.admin
-														</span>
-													</div>
-												</div>
-												<div class="form-group m-form__group m-form__group--sm row">
-													<label class="col-xl-3 col-lg-3 col-form-label">
-														Password:
-													</label>
-													<div class="col-xl-9 col-lg-9">
-														<span class="m-form__control-static">
-															*********
-														</span>
-													</div>
-												</div>
-											</div>
+											<!-- <div class="m-separator m-separator--dashed m-separator--lg"></div> -->
+										
 										</div>
 										<div class="tab-pane" id="m_form_confirm_3" role="tabpanel">
 											<div class="m-form__section m-form__section--first">
@@ -1465,18 +1135,8 @@
 										</div>
 									</div>
 									<!--end::Section-->                                 <!--end::Section-->
-									<div class="m-separator m-separator--dashed m-separator--lg"></div>
-									<div class="form-group m-form__group m-form__group--sm row">
-										<div class="col-xl-12">
-											<div class="m-checkbox-inline">
-												<label class="m-checkbox m-checkbox--solid m-checkbox--brand">
-													<input type="checkbox" name="accept" value="1">
-													Click here to indicate that you have read and agree to the terms presented in the Terms and Conditions agreement
-													<span></span>
-												</label>
-											</div>
-										</div>
-									</div>
+									<!-- <div class="m-separator m-separator--dashed m-separator--lg"></div> -->
+								
 								</div>
 							</div>
 						</div>
@@ -1508,7 +1168,7 @@
 											</span>
 										</span>
 									</a>
-									<a href="/usersInvite" class="btn btn-warning m-btn m-btn--custom m-btn--icon" data-wizard-action="next">
+									<a routerLink="/usersInvite" class="btn btn-warning m-btn m-btn--custom m-btn--icon" data-wizard-action="next">
 										<span>
 											<span>
 												Save & Continue

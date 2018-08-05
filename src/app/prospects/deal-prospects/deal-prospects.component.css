@@ -1,46 +1,17 @@
-header{
+.headerCss{
     position: relative;
-    top: -21px;
-    /* left: 20px; */
-    height: 2em;
-    bottom: 15px;
-    text-align: center;
+    bottom: 48em;
+    left: 22em;
 }
-p{
-    font-size:0.87rem;
-}
-h5{
-    color:deepskyblue;
-}
-.cusStyleDragMain{
+
+
+.headerCss1{
     position: relative;
-    bottom: 95em;
-    left: 20em;
-    /* z-index: 3; */
-    width: 93%;
-}
-.itemClass{
-    background: #FFF;
-    /* border: 2px solid lightgrey; */
-    height: 6em;
-    width: 13em;
-    margin: 7px
-
+    bottom:em;
+    left: 22em;
 }
 
-.wrapper{
-    display: -webkit-inline-flex;
-    padding:143px;
-}
-
-.eachContainerCss{
-    background: beige;
-    border: 1px solid beige;
-    padding: 24px;
-    margin-left: 0.5em;
-    border-right: 1px solid black
-}
-
-.eachContainerCss > div{
-    width: 100%;
+.cusMrgn{
+    margin-left: 20px;
+    /* cursor: not-allowed; */
 }

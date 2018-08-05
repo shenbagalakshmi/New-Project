@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormControl} from '@angular/forms';
+import {FormGroup,FormControl, Validators} from '@angular/forms';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { Helpers } from '../helpers';
 import { ScriptLoaderService } from '../services/script-loader.service';
@@ -60,7 +60,10 @@ this.loginRouter.events.subscribe((route) => {
 
 onLoginSubmit(event){
   console.log(event);
+//   if(event.secretWord == "Dinesh@123" && event.userIdentity == "Karthik")
   this.loginRouter.navigateByUrl('/loadDashboard');
+//   else
+//   alert("please enter valid credentials")
 }
 
 }

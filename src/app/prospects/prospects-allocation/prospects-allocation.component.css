@@ -1,0 +1,17 @@
+
+.cusPortlet{
+    width: 30%;
+    /* height: 275px; */
+    position: relative;
+    /* bottom: 40em; */
+    left: 22em;
+    top:3em;
+}
+
+.iFrameStyl{
+    position: relative;
+    bottom: 34em;
+    width: 48%;
+    left: 54em;
+    
+}

@@ -1,0 +1,147 @@
+<app-dashboard-header></app-dashboard-header>
+
+<div style="position:relative;bottom:42em;height: 20%;">
+    <div class='wrapper'> 
+      <div class="firstDragula">
+        <header>MEETING REQUEST  
+            <p> {{meetingRequest.length}}</p>
+            <div class="btnDiv">
+            <button class="clrBtn"></button>
+            <button class="clrLessBtn"></button>
+            <button class="clrLessBtn"></button>
+            <button class="clrLessBtn"></button>
+            <button class="clrLessBtn"></button>
+            <button class="clrLessBtn"></button>
+            <button class="clrLessBtn"></button>
+
+            </div>
+          </header> 
+        
+      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="meetingRequest">
+        <div class='itemClass' *ngFor="let item of meetingRequest">
+            <h5 [innerHtml]='item.heading'></h5>
+            <p [innerHtml]='item.closedDate'></p>
+        </div>
+        
+      </div>
+       <footer>
+          Total $ 2400
+        </footer>
+    </div>
+      
+    <div class="secondDragula">
+      <header>APPOINTMENT SCHEDULED
+          <p> {{scheduledAppointments.length}}</p>
+          <div class="btnDiv">
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+  
+              </div>
+         </header>
+      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="scheduledAppointments">
+        <div class='itemClass' *ngFor="let item of scheduledAppointments">
+          <h5 [innerHtml]='item.heading'></h5>
+          <p [innerHtml]='item.closedDate'></p>
+        
+        </div>
+       
+      </div>
+      <footer>
+          Total $ 5478
+        </footer>
+      </div>
+
+
+      <div class="thirdDragula">
+      <header>QUALIFIED TO BUY
+          <p> {{qualifyData.length}}</p>              
+          <div class="btnDiv">
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+  
+              </div>
+         </header>
+      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="qualifyData">
+          
+        <div class='itemClass' *ngFor="let item of qualifyData">
+          <h5 [innerHtml]='item.heading'></h5>
+          <p [innerHtml]='item.closedDate'></p>
+        
+        </div>
+      </div>
+      <footer>
+          Total $ 8521
+        </footer>
+      </div>
+
+      <div class="fourthDragula">
+      
+      <header>PROPOSAL
+          <p> {{propsalsData.length}}</p>                          
+          <div class="btnDiv">
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              <button class="clrLessBtn"></button>
+              </div>
+         </header>
+      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="propsalsData">
+          
+        <div class='itemClass' *ngFor="let item of propsalsData">
+          <h5 [innerHtml]='item.heading'></h5>
+          <p [innerHtml]='item.closedDate'></p>
+        
+        </div>
+      </div>
+      <footer>
+          Total $ 2500
+        </footer>
+</div>
+
+  <div class="fifthDragula">
+      <header>NEGOTIATION
+          <p> {{negotiationsData.length}}</p>              
+          <div class="btnDiv">
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrBtn"></button>
+              <button class="clrLessBtn"></button>
+  
+              </div>
+         </header>
+      <div class='container eachContainerCss' [dragula]='"another-bag"' [dragulaModel]="negotiationsData">
+        <div class='itemClass' *ngFor="let item of negotiationsData">
+          <h5 [innerHtml]='item.heading'></h5>
+          <p [innerHtml]='item.closedDate'></p>
+        
+        </div>
+      </div>
+      <footer>
+          Total $ 1547
+        </footer>
+      <!-- dragula list end -->
+      </div>
+      <!-- dragula container end -->
+    </div>
+    <!-- wrapper end -->
+  </div>
+  
+  
+  
+

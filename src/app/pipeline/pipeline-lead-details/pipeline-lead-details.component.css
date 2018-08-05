@@ -1,0 +1,76 @@
+header{
+    left: 5em;
+    position: relative;
+    /* width: 101%; */
+    height: 2em;
+    bottom: 0em;
+    text-align: left;
+}
+footer{
+    position: relative;
+    top: 7em;
+    left: 4em;
+}
+p{
+    font-size:0.87rem;
+}
+h5{
+    color:deepskyblue;
+}
+.cusStyleDragMain{
+    position: relative;
+    bottom: 95em;
+    left: 20em;
+    /* z-index: 3; */
+    width: 93%;
+}
+.itemClass{
+    background: #FFF;
+    /* border: 2px solid lightgrey; */
+    height: 6em;
+    width: 13em;
+    margin: 7px
+
+}
+
+.wrapper{
+    display: -webkit-inline-flex;   
+    position: relative;
+    /* bottom: 45em; */
+    left: 19.5em;
+}
+
+.eachContainerCss{
+    background: beige;
+    border: 1px solid beige;
+    padding: 24px;
+    top: 3em;
+    left: 2em;
+    margin-left: 0.5em;
+    position: relative;
+    width: 18em;
+}
+
+/* .eachContainerCss > div{
+    width: 100%;
+} */
+
+.btnDiv > button{
+    width: 1.5em;
+    border:1px solid lightgrey;
+}
+
+header  p{
+    position: relative;
+    bottom: 18px;
+    left: 174px;
+    margin-bottom: -1rem;
+}
+
+.clrBtn{
+    background-color: orange;
+    border: 1px solid orange !important;
+}
+.firstDragula{
+    position: relative;
+}

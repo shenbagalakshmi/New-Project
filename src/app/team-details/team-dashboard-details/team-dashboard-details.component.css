@@ -1,0 +1,30 @@
+:host{
+    height:20%;
+}
+
+.cardStyl1{
+    width: 36%;
+    position: relative;
+    left: 20.5em;
+    bottom: 45em
+    /* bottom:529px; */
+}
+.cardStyl2{
+    width: 43%;
+    position: relative;
+    /* bottom: 1041px; */
+    left: 58em;
+    bottom: 84.5em;
+}
+
+.cardStyl3{
+    bottom:84em;
+    left: 19.5%;
+    width: 80%;
+}
+
+.cardStyl4{
+    width: 40%;
+    left: 20%;
+    bottom: 83em;
+}

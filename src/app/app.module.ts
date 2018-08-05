@@ -13,9 +13,14 @@ import {AdminDashboardModule} from './admin-dashboard/admin-dashboard.module';
 import {MapDetailsModule} from './map-details/map-details.module'
 import { UserManagementModule } from './user-management/user-management.module';
 import {ProspectsModule} from './prospects/prospects.module';
+import { TeamDetailsModule } from './team-details/team-details.module';
+import { ActionDetailsModule } from './action-details/action-details.module';
+
 
 //services
 import {ScriptLoaderService} from './services/script-loader.service';
+import { PipelineModule } from './pipeline/pipeline.module';
+import { Action } from 'rxjs/scheduler/Action';
 
 
 const appRoutes: Routes = [
@@ -37,12 +42,28 @@ const appRoutes: Routes = [
      loadChildren: () => MapDetailsModule
    },
    {
+     path:'loadAction',
+     loadChildren: () => ActionDetailsModule
+   },
+   {
     path:'usersInvite',
     loadChildren: () => UserManagementModule
    },
    {
      path:'showProspects',
      loadChildren: () => ProspectsModule
+   },
+   {
+     path:'showTeamDetails',
+     loadChildren: () => TeamDetailsModule
+   },
+   {
+     path:'showPipeline',
+     loadChildren: () => PipelineModule
+   },
+   {
+     path:'logout',
+     component:LoginComponent
    },
    { path: '**', component: PageNotFoundComponent }
 ];
@@ -56,6 +77,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    // FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes

@@ -11,11 +11,11 @@ export class InviteUsersComponent implements OnInit {
 
   }
   ngOnInit() {
-
+    document.getElementById('dashboardDetailsDiv').style.display = 'none' 
   }
   ngAfterViewInit() {
-      this.scriptLoaderService.loadScripts('app-wizard-wizard-2',
-          ['assets/js/wizard.js']);
+      this.scriptLoaderService.loadScripts('app-invite-users',
+          ['assets/js/scripts.bundle.js','assets/js/wizard.js']);
 
   }
  
