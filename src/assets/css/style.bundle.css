@@ -357,13 +357,13 @@ h2, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem; } 
 
 h4, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 0.9rem; }
 
 h6, .h6 {
   font-size: 1rem; }
@@ -16837,10 +16837,10 @@ code {
 @media (min-width: 993px) {
   .m-portlet.m-portlet--full-height {
     width:82%;
-    height: calc(100% - 3.2rem);
+    /* height: calc(100% - 3.2rem); */
     position:relative;
     left:255px;
-    bottom:275px;
+    bottom:1100px;
 
    }
     .m-portlet.m-portlet--full-height .m-portlet__body {

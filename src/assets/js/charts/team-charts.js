@@ -439,22 +439,17 @@ var FlotchartsDemo = function() {
         function plotWithOptions() {
             $.plot($("#m_flotcharts_5"),
 
-                [{
-                    label: "sales",
-                    data: d1,
-                    lines: {
-                        lineWidth: 1,
-                    },
-                    shadowSize: 0
-                }, {
-                    label: "tax",
+                [
+                 
+                 {
+                    label: "call",
                     data: d2,
                     lines: {
                         lineWidth: 1,
                     },
                     shadowSize: 0
                 }, {
-                    label: "profit",
+                    label: "email",
                     data: d3,
                     lines: {
                         lineWidth: 1,
@@ -709,12 +704,12 @@ var FlotchartsDemo = function() {
         init: function() {
             // default charts
             // demo1();
-            if(document.getElementById("m_flotcharts_2") != null) {
-            demo2();
-            }
+            // if(document.getElementById("m_flotcharts_2") != null) {
+            // demo2();
+            // }
             // demo3();
             // demo4();
-            // demo5();
+            demo5();
             // demo6();
             // demo7();
 
